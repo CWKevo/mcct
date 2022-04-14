@@ -26,8 +26,6 @@ try:
 except Exception:
     __readme__ = "Failed to read README.md!"
 
-__doc__ = __readme__
-
 
 
 setuptools.setup(
