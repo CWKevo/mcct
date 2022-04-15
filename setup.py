@@ -6,7 +6,7 @@ sys.path.append('.')
 import setuptools
 
 
-__description__ = "Python Project Template" # FIXME
+__description__ = "Minecraft Command Tools: parser for Minecraft's command JSON-like data syntax, loot tables, NBT and more."
 __author__      = "SKevo"
 __copyright__   = "Copyright (c) 2021, SKevo"
 __credits__     = ["SKevo"]
@@ -26,12 +26,10 @@ try:
 except Exception:
     __readme__ = "Failed to read README.md!"
 
-__doc__ = __readme__
-
 
 
 setuptools.setup(
-    name = 'python_project_template', # FIXME
+    name = 'mccp',
     packages = setuptools.find_packages(exclude=('tests',)),
 
     long_description=__readme__,
@@ -40,14 +38,14 @@ setuptools.setup(
     version = __version__,
     license = __license__,
     description = __description__,
-    keywords = [], # FIXME
+    keywords = ['minecraft', 'command', 'tools', 'nbt', 'json', 'loot', 'parser'],
 
     author = __author__,
     author_email = __email__,
 
-    url = 'https://github.com/CWKevo/python-project-template', # FIXME
+    url = 'https://github.com/CWKevo/mcct',
 
-    install_requires=[], # FIXME
+    install_requires=[],
 
     classifiers=[
         f'Development Status :: {__status__}',
